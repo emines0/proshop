@@ -2,9 +2,13 @@ import express from 'express';
 import dotenv from 'dotenv';
 // dotenv.config() loads the variables from .env file into process.env
 dotenv.config();
+import connectDB from './config/db.js';
 import products from './data/products.js';
 
 const port = process.env.PORT || 5002;
+
+// Connect to database
+connectDB();
 
 // Initialize express
 const app = express();
