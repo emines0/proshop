@@ -19,7 +19,7 @@ const Product = ({ product }) => {
         <Link to={`/product/${product._id}`}>
           <Card.Title
             as="div"
-            // The "product-title" class from assets/styles/index.css is preventing to overflow the text. The title is displayed in one line
+            // The "product-title" class from assets/styles/index.css is preventing to overflow the text. The title is displayed in one line.
             className="product-title"
           >
             <strong>{product.name}</strong>
