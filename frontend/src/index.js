@@ -27,7 +27,7 @@ const router = createBrowserRouter(
         element={<HomeScreen />}
       />
       <Route
-        path="/product/:id"
+        path="/api/products/:id"
         element={<ProductScreen />}
       />
     </Route>

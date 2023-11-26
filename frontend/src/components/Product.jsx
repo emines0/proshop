@@ -8,7 +8,7 @@ const Product = ({ product }) => {
     // The "my-3" class is a Bootstrap class that adds margin to the top and bottom of an element
     // The "p-3" class is a Bootstrap class that adds padding to all sides of an element
     <Card className="my-3 p-3 rounded">
-      <Link to={`/product/${product._id}`}>
+      <Link to={`api/products/${product._id}`}>
         <Card.Img
           src={product.image}
           variant="top"
@@ -16,7 +16,7 @@ const Product = ({ product }) => {
       </Link>
 
       <Card.Body>
-        <Link to={`/product/${product._id}`}>
+        <Link to={`api/products/${product._id}`}>
           <Card.Title
             as="div"
             // The "product-title" class from assets/styles/index.css is preventing to overflow the text. The title is displayed in one line.

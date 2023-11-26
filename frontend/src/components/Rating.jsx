@@ -3,7 +3,7 @@ import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 const Rating = ({ value, text }) => {
   return (
     <div className="rating">
-      <sapn>
+      <span>
         {value >= 1 ? (
           <FaStar />
         ) : value >= 0.5 ? (
@@ -11,8 +11,8 @@ const Rating = ({ value, text }) => {
         ) : (
           <FaRegStar />
         )}
-      </sapn>
-      <sapn>
+      </span>
+      <span>
         {value >= 2 ? (
           <FaStar />
         ) : value >= 1.5 ? (
@@ -20,8 +20,8 @@ const Rating = ({ value, text }) => {
         ) : (
           <FaRegStar />
         )}
-      </sapn>
-      <sapn>
+      </span>
+      <span>
         {value >= 3 ? (
           <FaStar />
         ) : value >= 2.5 ? (
@@ -29,8 +29,8 @@ const Rating = ({ value, text }) => {
         ) : (
           <FaRegStar />
         )}
-      </sapn>
-      <sapn>
+      </span>
+      <span>
         {value >= 4 ? (
           <FaStar />
         ) : value >= 3.5 ? (
@@ -38,8 +38,8 @@ const Rating = ({ value, text }) => {
         ) : (
           <FaRegStar />
         )}
-      </sapn>
-      <sapn>
+      </span>
+      <span>
         {value >= 5 ? (
           <FaStar />
         ) : value >= 4.5 ? (
@@ -47,7 +47,7 @@ const Rating = ({ value, text }) => {
         ) : (
           <FaRegStar />
         )}
-      </sapn>
+      </span>
       <span className="rating-text">{text && text}</span>
     </div>
   );
